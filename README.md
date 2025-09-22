@@ -1,5 +1,9 @@
 # ff_lib
 ff simple file-config library  
+this lib have some tags:  
+[key] = value (for map structure)  
+<block> (for open block tag)  
+</block> (for close block tag)
 you can:  
 create files and dirs  
 get home and config paths  
