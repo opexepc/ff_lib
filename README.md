@@ -1,5 +1,5 @@
 # ff_lib
-ff simple file-config library
+ff simple file-config library\n
 you can:
 create files and dirs
 get home and config paths
