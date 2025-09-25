@@ -66,7 +66,7 @@ std::string ff::read_value_stream
     break;
   }
   if(ff_logger)
-    FF_LOG_ERR("line not found");
+    FF_LOG_WARN("line not found");
   return FF_NULL_STR;
 }
 
