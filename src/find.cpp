@@ -86,7 +86,7 @@ ff::block ff::find_block_stream
     break;
   }
   if(!block.found() && ff_logger)
-    FF_LOG_ERR("block not found");
+    FF_LOG_WARN("block not found");
   return block;
 }
 
@@ -164,7 +164,7 @@ int ff::find_line_stream
     break;
   }
   if(ff_logger)
-    FF_LOG_ERR("line not found");
+    FF_LOG_WARN("line not found");
   return FF_LINE_NPOS;
 }
 
@@ -242,7 +242,7 @@ int ff::find_line_for_key_stream
     break;
   }
   if(ff_logger)
-    FF_LOG_ERR("line not found");
+    FF_LOG_WARN("line not found");
   return FF_LINE_NPOS;
 }
 
