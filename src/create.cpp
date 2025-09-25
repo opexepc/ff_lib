@@ -37,7 +37,7 @@ bool ff::create_dir(const std::string &path, bool del)
     if(!std::filesystem::create_directories(path))
     {
       if(ff_logger)
-        FF_LOG_ERR("create firectory");
+        FF_LOG_ERR("create directory");
       return false;
     }
   }
