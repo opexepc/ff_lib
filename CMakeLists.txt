@@ -18,9 +18,3 @@ add_library(ff STATIC
 )
 
 target_include_directories(ff PUBLIC include)
-
-include(GNUInstallDirs)
-install(TARGETS ff
-    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
-install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
