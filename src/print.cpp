@@ -54,6 +54,7 @@ bool ff::print_lines_stream(ff::stream &stream, bool begin, int start_line, int 
       FF_LOG_ERR("unknow mode");
     break;
   }
+  return false;
 }
 
 bool ff::print_lines(const std::string &path, int start_line, int end_line)
