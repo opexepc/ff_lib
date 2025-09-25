@@ -32,7 +32,6 @@ bool ff::write_value_stream
     ffu::ltrim(tmp_str);
     if(tmp_str.compare(0, prefix.size(), prefix) == 0)
     {
-      FF_LOG_WARN("found");
       found = true;
       stream.lines[i] = tab + prefix + value;
       break;
