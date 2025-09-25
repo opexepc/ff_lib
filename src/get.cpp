@@ -47,7 +47,7 @@ int ff::get_str_count_stream(ff::stream &stream)
       {
         if(ff_logger)
           FF_LOG_ERR("open file for read");
-        return -1;
+        return FF_LINE_NPOS;
       }
       std::string line;
       int count = 1;
@@ -66,6 +66,7 @@ int ff::get_str_count_stream(ff::stream &stream)
       FF_LOG_ERR("unknow mode");
     break;
   }
+  return FF_LINE_NPOS;
 }
 
 int ff::get_str_count(const std::string &path)
