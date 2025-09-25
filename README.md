@@ -15,6 +15,6 @@ make
 cd ..
 cd example
 mkdir build && cd build
-camke ..
+cmake ..
 make
 ```
