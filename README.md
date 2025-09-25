@@ -8,4 +8,3 @@ cd ff_lib
 mkdir build && cd build
 cmake ..
 make
-sudo make install
