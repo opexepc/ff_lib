@@ -12,12 +12,12 @@ bool ff::write_value_stream
     return false;
   }
   int cycle_end = end_line;
+  if(stream.lines.size() == 0)
+    stream.lines.push_back(FF_NULL_STR);
   if(end_line == FF_LINE_NPOS)
     cycle_end = stream.lines.size();
   else if(cycle_end > stream.lines.size())
     cycle_end = stream.lines.size();
-  if(stream.lines.size() == 0)
-    stream.lines.push_back(FF_NULL_STR);
   if(start_line < 1 || start_line > cycle_end)
   {
     if(ff_logger)
