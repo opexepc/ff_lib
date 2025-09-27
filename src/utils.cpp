@@ -48,7 +48,7 @@ bool ffu::check_range(ff::stream &stream, int start_line, int &end_line)
       if(start_line < 1)
         return false;
       if(end_line == FF_LINE_NPOS)
-        end_line = stream.lines.size() + 1;
+        end_line = stream.lines.size();
       if(start_line > end_line)
         return false;
     }
