@@ -55,7 +55,7 @@ bool ff::remove_lines_stream(ff::stream &stream, int start_line, int end_line, b
       stream.lines[i] = FF_NULL_STR;
     }
   else
-    stream.lines.erase(stream.lines.begin() + start_line - 1, stream.lines.begin() + end_line - 1);
+    stream.lines.erase(stream.lines.begin() + start_line - 1, stream.lines.begin() + end_line);
   return true;
 }
 
