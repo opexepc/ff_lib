@@ -17,4 +17,7 @@ add_library(ff STATIC
     src/write.cpp
 )
 
+install(TARGETS ff DESTINATION lib)
+install(DIRECTORY include/ DESTINATION include)
+
 target_include_directories(ff PUBLIC include)
