@@ -6,6 +6,7 @@ check example for using
 ### step 0 - check software
 CMake 3.10+
 GCC/Clang on Linux
+
 Visual Studio or MinGW on Windows
 ### step 1 - build lib
 ```bash
