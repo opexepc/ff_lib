@@ -13,4 +13,7 @@ set_target_properties(ff PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/../include"
 )
 
+install(TARGETS ff DESTINATION lib)
+install(DIRECTORY include/ DESTINATION include)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE ff)
