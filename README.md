@@ -4,9 +4,10 @@ check example for using
 
 ### step 0 - check software
 CMake 3.10+
+git
 GCC/Clang on Linux
 
-Visual Studio or MinGW on Windows
+Visual Studio 2022 on Windows
 ## Linux
 ### step 1 - build lib
 ```bash
@@ -28,7 +29,7 @@ make
 ```
 
 ## Windows
-### step 1 - build lib
+### step 1 - build lib (admin cmd)
 ```bash
 git clone https://github.com/opexepc/ff_lib.git
 cd ff_lib
