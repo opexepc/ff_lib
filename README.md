@@ -3,10 +3,9 @@ ff simple file-config library
 check example for using
 
 ### step 0 - check software
-CMake 3.10+
-git
-GCC/Clang on Linux
-
+CMake 3.10+  
+git  
+GCC/Clang on Linux  
 Visual Studio 2022 on Windows
 ## Linux
 ### step 1 - build lib
